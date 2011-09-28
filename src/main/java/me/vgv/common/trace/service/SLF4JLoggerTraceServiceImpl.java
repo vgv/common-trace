@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
  */
 public final class SLF4JLoggerTraceServiceImpl implements TraceService {
 
-	Logger log = LoggerFactory.getLogger(SLF4JLoggerTraceServiceImpl.class);
+	static Logger log = LoggerFactory.getLogger(SLF4JLoggerTraceServiceImpl.class);
 
 	@Override
 	public void trace(TraceResult traceResult) {

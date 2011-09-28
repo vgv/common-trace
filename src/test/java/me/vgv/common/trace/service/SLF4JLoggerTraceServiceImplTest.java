@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 /**
  * @author Vasily Vasilkov (vgv@vgv.me)
  */
-public class SLF4JLoggerProfileServiceImplTest {
+public class SLF4JLoggerTraceServiceImplTest {
 
 	@Test
 	public void testTrace() throws Exception {

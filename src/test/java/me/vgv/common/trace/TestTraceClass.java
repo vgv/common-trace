@@ -8,7 +8,7 @@ import me.vgv.common.trace.annotation.Trace;
  * @author Vasily Vasilkov (vgv@vgv.me)
  */
 @Trace
-class TestProfileClass {
+class TestTraceClass {
 
 	public Object get() {
 		return new Object();

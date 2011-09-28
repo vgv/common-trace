@@ -38,8 +38,8 @@ public class TraceInterceptorTest {
 	public void testTraceMethodIfNoErrors() throws Throwable {
 		Object expectedResult = new Object();
 		MethodInvocation methodInvocation = Mockito.mock(MethodInvocation.class);
-		Mockito.when(methodInvocation.getThis()).thenReturn(new TestProfileClass());
-		Mockito.when(methodInvocation.getMethod()).thenReturn(TestProfileClass.class.getDeclaredMethod("get"));
+		Mockito.when(methodInvocation.getThis()).thenReturn(new TestTraceClass());
+		Mockito.when(methodInvocation.getMethod()).thenReturn(TestTraceClass.class.getDeclaredMethod("get"));
 		Mockito.when(methodInvocation.proceed()).thenReturn(expectedResult);
 
 		TraceService traceService = Mockito.mock(TraceService.class);
